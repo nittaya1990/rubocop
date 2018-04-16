@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### Bug fixes
+
+* [#5782](https://github.com/bbatsov/rubocop/issues/5782): Fix minimum Ruby target version to 2.3 or lower for `Lint/UnifiedInteger` cop. ([@koic][])
+
 ## 0.55.0 (2018-04-16)
 
 ### New features

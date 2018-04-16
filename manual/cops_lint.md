@@ -1896,19 +1896,18 @@ Enabled by default | Supports autocorrection
 --- | ---
 Enabled | Yes
 
-This cop checks for using Fixnum or Bignum constant.
+This cop checks for using `Fixnum` or `Bignum` constant.
+This cop targets Ruby 2.4 or higher.
 
 ### Examples
 
 ```ruby
 # bad
-
 1.is_a?(Fixnum)
 1.is_a?(Bignum)
 ```
 ```ruby
 # good
-
 1.is_a?(Integer)
 ```
 
