@@ -137,6 +137,14 @@ RSpec.describe RuboCop::Cop::Style::GuardClause do
     RUBY
   end
 
+  it 'accepts when expressing nil in a method using `()`' do
+    expect_no_offenses(<<~RUBY)
+      def func
+        ()
+      end
+    RUBY
+  end
+
   context 'MinBodyLength: 1' do
     let(:cop_config) do
       { 'MinBodyLength' => 1 }

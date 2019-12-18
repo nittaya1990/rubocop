@@ -49,7 +49,7 @@ module RuboCop
 
           if body.if_type?
             check_ending_if(body)
-          elsif body.begin_type? && body.children.last.if_type?
+          elsif body.begin_type? && body.children.last&.if_type?
             check_ending_if(body.children.last)
           end
         end
